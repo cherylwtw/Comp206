@@ -209,14 +209,22 @@ int main (int argc, char** argv) {
 //    printf("a = %s", a);
 //    p = (int*) a;
     
-    // my computer is little endian
-    char *p;
-    int a = 257;
-    p = (char*)&a;
-    printf( "The value at p is %d.\n", *p );
-    printf( "The value at p+1 is %d.\n", *(p+1) );
-    printf( "The value at p+2 is %d.\n", *(p+2) );
-    printf( "The value at p+3 is %d.\n", *(p+3) );
+//    // my computer is little endian
+//    char *p;
+//    int a = 257;
+//    p = (char*)&a;
+//    printf( "The value at p is %d.\n", *p );
+//    printf( "The value at p+1 is %d.\n", *(p+1) );
+//    printf( "The value at p+2 is %d.\n", *(p+2) );
+//    printf( "The value at p+3 is %d.\n", *(p+3) );
     
-    return 0;
+    
+    
+    int arr[]  = {10, 20, 30, 40, 50, 60};
+    int *ptr1 = arr;
+    int *ptr2 = arr + 5;
+    printf("Number of elements between two pointers are %d\n", (ptr2 - ptr1));
+    printf("Number of bytes between two pointers are %d\n", (char*)ptr2 - (char*)ptr1);
+    printf("Value difference is %d, %d\n", (*ptr2), (*ptr1));
+    return  0;
 }
