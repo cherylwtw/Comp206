@@ -7,3 +7,6 @@ Standalone file to draw the Sierpinski Triangle based on parameters height and l
 
 ### CPointer.c
 Standalone file to help understand C pointers
+
+### BitOperations.c
+Standalone file to help understand bit operations
