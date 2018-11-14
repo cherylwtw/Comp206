@@ -1,5 +1,6 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 void swap(int *a, int *b) {
     int temp;
@@ -146,12 +147,12 @@ void PrintRow(int row, int height,int level) {
 
 
 int main (int argc, char** argv) {
-    char hello[3][3] = {"hi", "hi", "hi"};
-    pointer_example1();
-    pointer_example2();
-    pointer_example3();
-    swap_example();
-    
+//    char hello[3][3] = {"hi", "hi", "hi"};
+//    pointer_example1();
+//    pointer_example2();
+//    pointer_example3();
+//    swap_example();
+//    
 //    char hellos1[3][3] = {"hi", "yo", "ha"};
 //    ArrayDemo1(hellos1);
 //    ArrayDemo2(hellos1);
@@ -180,11 +181,6 @@ int main (int argc, char** argv) {
 //    ArrayDemo5(hellos2);
 //    ArrayDemo6(hellos2);
     
-//    int i = 3;
-//    float j = 3.14;
-//    int* p;
-//    p = &j;
-//    printf("%%d\n", *(int*)(p));
     
 //    int a[3] = {1, 2, 3};
 ////    int a = 123;
@@ -194,6 +190,33 @@ int main (int argc, char** argv) {
 //    printf("%d, %d\n", p[2], *(p+2));
 //    printf("%d, %d\n", p[3], *(p+3));
 //  
+    
+    // pointer_conversion
+//    int* p;
+//    int a = 257;
+//    p = &a;
+    
+//    int i = 3;
+//    float j = 3.14;
+//    int* p;
+////    p = &j; // no - need to cast
+//    p = (int*)&j; // yes
+//    printf("%d\n", *(int*)(p));
+   
+//    int* p;
+//    char a[4];
+//    memset(a, '\0', 4);
+//    printf("a = %s", a);
+//    p = (int*) a;
+    
+    // my computer is little endian
+    char *p;
+    int a = 257;
+    p = (char*)&a;
+    printf( "The value at p is %d.\n", *p );
+    printf( "The value at p+1 is %d.\n", *(p+1) );
+    printf( "The value at p+2 is %d.\n", *(p+2) );
+    printf( "The value at p+3 is %d.\n", *(p+3) );
+    
     return 0;
 }
-
