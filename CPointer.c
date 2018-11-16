@@ -218,13 +218,21 @@ int main (int argc, char** argv) {
 //    printf( "The value at p+2 is %d.\n", *(p+2) );
 //    printf( "The value at p+3 is %d.\n", *(p+3) );
     
-    
-    
     int arr[]  = {10, 20, 30, 40, 50, 60};
     int *ptr1 = arr;
     int *ptr2 = arr + 5;
+    printf("ptr1 is %d\n", ptr1);
+    printf("(ptr1+1) is %d\n", (ptr1+1));
+    printf("ptr2 is %d\n", ptr2);
+    
+    // has to be same type of pointers, when they do 
     printf("Number of elements between two pointers are %d\n", (ptr2 - ptr1));
+    
+    printf("char ptr1 is %d\n", (char*)ptr1);
+    printf("char ptr2 is %d\n", (char*)ptr2);
+    
     printf("Number of bytes between two pointers are %d\n", (char*)ptr2 - (char*)ptr1);
+    
     printf("Value difference is %d, %d\n", (*ptr2), (*ptr1));
     return  0;
 }
