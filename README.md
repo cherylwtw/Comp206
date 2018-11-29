@@ -13,3 +13,6 @@ Standalone file to help understand bit operations
 
 ### swap.c
 Standalone file to help understand variable scope and use pointer to achieve multiple return values in function using a swap example
+
+### LinkedList.c
+Standalone file to help understand Struct and Linked List in C
