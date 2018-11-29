@@ -10,3 +10,6 @@ Standalone file to help understand C pointers
 
 ### BitOperations.c
 Standalone file to help understand bit operations
+
+### swap.c
+Standalone file to help understand variable scope and use pointer to achieve multiple return values in function using a swap example
