@@ -1,5 +1,9 @@
 #include<stdio.h>
 
+int return5() {
+    return 5;
+}
+
 void add(int a, int b) {
     printf("%d\n", (a+b));
 }
@@ -15,12 +19,22 @@ int compare_ints(void* a, void* b) {
 
 int main(void) {
     // example 1
-    void (*p)(int, int);
+    printf("\n----- Example 1 -----\n");
+    int (*fn)() = return5;
+    int x = (*fn)();
+    int y = return5();
+    int z = fn();
+    printf("x = %d, y = %d, z = %d\n", x, y, z);
     
+  
+    // example 2
+    printf("\n----- Example 2 -----\n");
+    void (*p)(int, int);
     p = &add;
     p(5, 5);
     
-    // example 2
+    // example 3
+    printf("\n----- Example 3 -----\n");
     int (*comparison)(void*, void*);
     
     int* ptr_a;
