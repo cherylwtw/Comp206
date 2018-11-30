@@ -20,3 +20,6 @@ Standalone file to help understand Struct and Linked List in C
 ### time_hack
 Standalone demo for hacking shared library (time) using the LD_PRELOAD trick explained here:
 http://www.goldsborough.me/c/low-level/kernel/2016/08/29/16-48-53-the_-ld_preload-_trick/
+
+### 
+Standalone file to help understand Pointer to Function
